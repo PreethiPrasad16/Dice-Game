@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,  min-width=600px,  initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+
+    <title>DICE</title>
+</head>
+
+<body>
+    <div class="container-fluid bg-info" style="background-image: url(bg.webp)">
+        <div class="container" style="border-radius: 50px;font-family: Lato;">
+            <h1 style="text-align:center; margin-top: 40px;font-family: Lato;">Dice Game</h1>
+
+
+            <div class="row" style="height:600px;  margin:auto;padding:20px;">
+
+                <!--Player-1-->
+                <div class="col-4 player1 active">
+
+                    <div class="card bg-info player1total">
+                        <div class="card-header text-center  ">
+                            <h1 id="p0">PLAYER-1</h1>
+                        </div>
+                        <div class="card-body text-center">
+                            <h1 id="s0">43</h1>
+                        </div>
+                    </div>
+
+                    <div class="card bg-info player1dice">
+                        <div class="card-header text-center">
+                            <p>CURRENT</p>
+                        </div>
+                        <div class="card-body  text-center">
+                            <h1 id="c0">67</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!--dice-->
+                <div class=" col-4" style="background-color:white;color:white;text-align:center; align-items:center">
+                    <h1>Dice Game</h1><br><br>
+                    <img src="dice-6.png" id="dice" class="dice"><br><br><br>
+                    <div class="btn-group-vertical" style="text-align:center; align-items:center;">
+
+                        <button class="btn btn-roll btn btn-info"><i class="ion-ios-loop"></i>Roll dice</button><br>
+                        <button class="btn btn-hold btn btn-info"><i class="ion-ios-download-outline"></i>Hold</button><br>
+                        <button class="btn btn-new btn btn-info"><i class="ion-ios-plus-outline"></i>New game</button><br>
+                    </div>
+                </div>
+
+                <!--Player-2-->
+                <div class="col-4 player2">
+
+
+                    <div class="card  bg-info player2total">
+                        <div class="card-header text-center">
+                            <h1 id="p1">PLAYER-2</h1>
+                        </div>
+                        <div class="card-body text-center">
+                            <h1 id="s1">67</h1>
+                        </div>
+                    </div>
+                    <div class="card bg-info player2dice">
+                        <div class="card-header text-center">
+                            <p>CURRENT</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <h1 id="c1">67</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <script src="dice.js">
+    </script>
+
+
+</body>
+
+</html>
