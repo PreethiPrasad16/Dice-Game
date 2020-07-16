@@ -1,11 +1,5 @@
-var score, rndScore, actiivePlayer, game;
+var score, rndScore, activePlayer, game;
 init();
-
-//console.log(dice);
-//document.querySelector('#c' + activePlayer).textContent = dice;
-//var x = document.querySelector('#s' + activePlayer).textContent
-//console.log(x);
-
 
 document.querySelector('.btn-roll').addEventListener('click', function() {
 
@@ -27,9 +21,9 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
     score[activePlayer] += rndScore;
     document.getElementById('s' + activePlayer).textContent = score[activePlayer];
 
-    if (score[activePlayer] >= 50) {
+    if (score[activePlayer] >= 10) {
         document.getElementById('p' + activePlayer).textContent = 'Winner!!';
-        document.querySelector('.dice').style.visiblity = 'hidden';
+        document.querySelector('.dice').style.display = 'none';
 
     } else {
         dry();
@@ -42,8 +36,6 @@ function dry() {
     rndScore = 0;
     document.getElementById('c0').textContent = '0';
     document.getElementById('c1').textContent = '0';
-    //document.querySelector('player1').classList.toggle('active');
-    //document.querySelector('player2').classList.toggle('active');
     document.querySelector('.dice').style.visiblity = 'hidden';
 
 }
